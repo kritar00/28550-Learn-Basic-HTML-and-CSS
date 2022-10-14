@@ -19,34 +19,34 @@
   </head>
   <body>
     <div>
-      <nav id="navbar" class="navbar sticky">
-        <div class="navbar-container">
+      <nav id="navbar" class="navbar fixed-nav">
+        <div class="container">
           <a href="#">
             <img
-              class="navbar-logo"
+              class="navbar__logo"
               src="https://themesdesign.in/zoric/layout/images/logo-light.png"
               alt="logo"
             />
             <img
               src="https://themesdesign.in/zoric/layout/images/logo-dark.png"
-              class="navbar-logo logo-d"
+              class="navbar__logo logo-d"
               alt="logo"
             />
           </a>
-          <label for="dropdown" class="toggler fs-24">
+          <label for="dropdown" class="toggler">
             <i class="uil uil-bars"></i>
           </label>
           <input type="checkbox" id="dropdown" />
-          <div class="navbar-menu navbar-animated">
-            <ul class="navbar-list">
-              <li><a class="nav-link active" href="#">Home</a></li>
-              <li><a class="nav-link" href="#">Service</a></li>
-              <li><a class="nav-link" href="#">Process</a></li>
-              <li><a class="nav-link" href="#">Testimonial</a></li>
-              <li><a class="nav-link" href="#">Portfolio</a></li>
-              <li><a class="nav-link" href="#">Pricing</a></li>
-              <li><a class="nav-link" href="#">Blog</a></li>
-              <li><a class="nav-link" href="#">Contact</a></li>
+          <div class="navbar__menu">
+            <ul class="navbar__list">
+              <li><a class="navbar__link active" href="#">Home</a></li>
+              <li><a class="navbar__link" href="#">Service</a></li>
+              <li><a class="navbar__link" href="#">Process</a></li>
+              <li><a class="navbar__link" href="#">Testimonial</a></li>
+              <li><a class="navbar__link" href="#">Portfolio</a></li>
+              <li><a class="navbar__link" href="#">Pricing</a></li>
+              <li><a class="navbar__link" href="#">Blog</a></li>
+              <li><a class="navbar__link" href="#">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -54,23 +54,23 @@
 
       <section class="home" id="home">
         <div class="overlay"></div>
-        <div class="container text-align-center justify-content-center">
-          <div class="title-container">
-            <h5 class="text-white fs-15 sub-title">ZORIC TEMPLATE</h5>
-            <h1 class="title text-white mbottom-16">
+        <div class="container">
+          <div class="home__wrapper">
+            <h5 class="home__subtitle">ZORIC TEMPLATE</h5>
+            <h1 class="home__title">
               Powerful analytics tools for your business
             </h1>
-            <p class="description">
+            <p class="home__caption">
               Launch your campaign and benefit from our expertise on designing
               and managing conversion centered bootstrap v5 html page
             </p>
-            <div class="mtop-24 pt-8">
-              <a class="btn btn-main text-white" href="#">Get Started Now</a>
+            <div>
+              <a class="btn btn--main" href="#">Get Started Now</a>
             </div>
           </div>
         </div>
       </section>
-      <div class="position-relative">
+      <div class="shape-wrapper">
         <div class="shape">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -95,42 +95,42 @@
           </svg>
         </div>
       </div>
-      <div class="features">
-        <div class="features-container justify-content-center">
-          <div class="col mtop-16">
-            <div class="col-features">
-              <div class="icon-feature flex-shrink-0">
+      <div class="container">
+        <div class="features">
+          <div class="features__wrapper">
+            <div class="features__box">
+              <div class="features__icon">
                 <i class="uil uil-analytics"></i>
               </div>
-              <div class="ml-16">
-                <h4 class="fs-17">Analysis</h4>
-                <h5 class="text-o50 fs-15">
+              <div class="features__textbox">
+                <h4 class="features__textbox-big">Analysis</h4>
+                <h5 class="features__textbox-small">
                   Category leading brand experiences that have meaning.
                 </h5>
               </div>
             </div>
           </div>
-          <div class="col mtop-16">
-            <div class="col-features">
-              <div class="icon-feature flex-shrink-0">
+          <div class="features__wrapper">
+            <div class="features__box">
+              <div class="features__icon">
                 <i class="uil uil-crosshair"></i>
               </div>
-              <div class="ml-16">
-                <h4 class="fs-17">Strategy</h4>
-                <h5 class="text-o50 fs-15">
+              <div class="features__textbox">
+                <h4 class="features__textbox-big">Strategy</h4>
+                <h5 class="features__textbox-small">
                   Category leading brand experiences that have meaning.
                 </h5>
               </div>
             </div>
           </div>
-          <div class="col mtop-16">
-            <div class="col-features">
-              <div class="icon-feature flex-shrink-0">
+          <div class="features__wrapper">
+            <div class="features__box">
+              <div class="features__icon">
                 <i class="uil uil-search"></i>
               </div>
-              <div class="ml-16">
-                <h4 class="fs-17">Research</h4>
-                <h5 class="text-o50 fs-15">
+              <div class="features__textbox">
+                <h4 class="features__textbox-big">Research</h4>
+                <h5 class="features__textbox-small">
                   Category leading brand experiences that have meaning.
                 </h5>
               </div>
@@ -140,125 +140,98 @@
       </div>
     </div>
     <section id="services" class="services">
-      <div class="grid-2r container justify-content-center">
-        <div class="tilte-wrap text-align-center">
-          <h5 class="fs-15 text-o50">SERVICES WE'RE PROVIDED</h5>
-          <h2 class="title2">We do all Creative Services</h2>
-          <hr class="mtop-16" />
-          <p class="mtop-16">
+      <div class="container">
+        <div class="services__wrapper">
+          <h5 class="services__subtitle">SERVICES WE'RE PROVIDED</h5>
+          <h2 class="services__title">We do all Creative Services</h2>
+          <hr />
+          <p class="services__caption">
             We craft digital, graphic and dimensional thinking, to create
             category leading brand experiences that have meaning and add a
             value.
           </p>
         </div>
-        <div class="grid-3c">
-          <div class="col">
-            <div class="service-item">
-              <img
-                src="	https://themesdesign.in/zoric/layout/images/feature/img-01.png"
-                alt="img"
-                class="service-img"
-              />
-              <h4 class="mtop-16">Web design</h4>
-              <hr />
-              <p class="mtop-16">
-                Those who do not know how to pursue pleasure rationally
-                encounter consequences that are extremely painful.
-              </p>
-            </div>
+        <div class="grid-c">
+          <div class="services__item">
+            <img
+              src="	https://themesdesign.in/zoric/layout/images/feature/img-01.png"
+              alt="img"
+              class="service-img"
+            />
+            <h4 class="mtop-16">Web design</h4>
+            <hr />
+            <p class="mtop-16">
+              Those who do not know how to pursue pleasure rationally encounter
+              consequences that are extremely painful.
+            </p>
           </div>
-          <div class="col">
-            <div class="service-item box-shadow">
-              <img
-                src="	https://themesdesign.in/zoric/layout/images/feature/img-01.png"
-                alt="img"
-                class="service-img"
-              />
-              <h4 class="mtop-16">Development</h4>
-              <hr />
-              <p class="mtop-16">
-                Due to its widespread use as filler text for layouts,
-                non-readability is of great importance.
-              </p>
-            </div>
+          <div class="services__item box-shadow">
+            <img
+              src="	https://themesdesign.in/zoric/layout/images/feature/img-01.png"
+              alt="img"
+              class="service-img"
+            />
+            <h4 class="mtop-16">Development</h4>
+            <hr />
+            <p class="mtop-16">
+              Due to its widespread use as filler text for layouts,
+              non-readability is of great importance.
+            </p>
           </div>
-          <div class="col">
-            <div class="service-item">
-              <img
-                src="	https://themesdesign.in/zoric/layout/images/feature/img-01.png"
-                alt="img"
-                class="service-img"
-              />
-              <h4 class="mtop-16">Branding</h4>
-              <hr />
-              <p class="mtop-16">
-                There are many variations of passages of available, but the
-                majority alteration in some form.
-              </p>
-            </div>
+          <div class="services__item">
+            <img
+              src="	https://themesdesign.in/zoric/layout/images/feature/img-01.png"
+              alt="img"
+              class="service-img"
+            />
+            <h4 class="mtop-16">Branding</h4>
+            <hr />
+            <p class="mtop-16">
+              There are many variations of passages of available, but the
+              majority alteration in some form.
+            </p>
           </div>
-          <div class="col">
-            <div class="service-item box-shadow">
-              <img
-                src="	https://themesdesign.in/zoric/layout/images/feature/img-01.png"
-                alt="img"
-                class="service-img"
-              />
-              <h4 class="mtop-16">Easy to customize</h4>
-              <hr />
-              <p class="mtop-16">
-                The generated Lorem Ipsum is therefore always free from
-                repetition, injected humour.
-              </p>
-            </div>
+          <div class="services__item box-shadow">
+            <img
+              src="	https://themesdesign.in/zoric/layout/images/feature/img-01.png"
+              alt="img"
+              class="service-img"
+            />
+            <h4 class="mtop-16">Easy to customize</h4>
+            <hr />
+            <p class="mtop-16">
+              The generated Lorem Ipsum is therefore always free from
+              repetition, injected humour.
+            </p>
           </div>
-          <div class="col">
-            <div class="service-item">
-              <img
-                src="	https://themesdesign.in/zoric/layout/images/feature/img-01.png"
-                alt="img"
-                class="service-img"
-              />
-              <h4 class="mtop-16">Unrivaled Quality</h4>
-              <hr />
-              <p class="mtop-16">
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page.
-              </p>
-            </div>
+          <div class="services__item">
+            <img
+              src="	https://themesdesign.in/zoric/layout/images/feature/img-01.png"
+              alt="img"
+              class="service-img"
+            />
+            <h4 class="mtop-16">Unrivaled Quality</h4>
+            <hr />
+            <p class="mtop-16">
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page.
+            </p>
           </div>
-          <div class="col">
-            <div class="service-item box-shadow">
-              <img
-                src="	https://themesdesign.in/zoric/layout/images/feature/img-01.png"
-                alt="img"
-                class="service-img"
-              />
-              <h4 class="mtop-16">Online Marketing</h4>
-              <hr />
-              <p class="mtop-16">
-                This is required when, for example, the is not yet available.
-                Dummy text is also known as 'fill text'.
-              </p>
-            </div>
+          <div class="services__item box-shadow">
+            <img
+              src="	https://themesdesign.in/zoric/layout/images/feature/img-01.png"
+              alt="img"
+              class="service-img"
+            />
+            <h4 class="mtop-16">Online Marketing</h4>
+            <hr />
+            <p class="mtop-16">
+              This is required when, for example, the is not yet available.
+              Dummy text is also known as 'fill text'.
+            </p>
           </div>
         </div>
       </div>
     </section>
-    <script>
-      window.onscroll = function () {
-        scrollFunction();
-      };
-      function scrollFunction() {
-        if (
-          document.body.scrollTop > 80 ||
-          document.documentElement.scrollTop > 80
-        ) {
-          document.getElementById("navbar").classList.add("navbar-scroll");
-        } else {
-          document.getElementById("navbar").classList.remove("navbar-scroll");
-        }
-      }
-    </script>
   </body>
 </html>
