@@ -107,6 +107,11 @@ a {
 .services__caption {
   margin-top: 16px;
 }
+.services__items {
+  max-width: 1200px;
+  display: grid;
+  margin: 0 auto;
+}
 .services__item {
   display: flex;
   flex-direction: column;
@@ -114,11 +119,16 @@ a {
   text-align: center;
   align-items: center;
 }
-.service-img {
+.services__item-img {
   max-width: 100%;
   height: auto;
 }
-
+.services__item-title {
+  margin-top: 16px;
+}
+.services__item-caption {
+  margin-top: 16px;
+}
 .home {
   background-image: url("https://themesdesign.in/zoric/layout/images/home/bg-home1-1.jpg");
   background-position: center;
@@ -220,14 +230,6 @@ svg {
   position: relative;
   z-index: 100;
 }
-.grid {
-  display: grid;
-  grid-template-columns: auto;
-}
-.grid-c {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-}
 
 .features__wrapper {
   padding: 0px 10px;
@@ -322,6 +324,9 @@ svg {
   .features__wrapper {
     width: 50%;
   }
+  .services__items {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media all and (min-width: 991px) {
   .container {
@@ -339,6 +344,10 @@ svg {
   .features__wrapper {
     width: calc(100% / 3);
   }
+
+  .services__items {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 @media all and (min-width: 992px) {
   .container {
@@ -347,6 +356,11 @@ svg {
   .navbar-container {
     max-width: 960px;
     justify-content: space-between;
+  }
+  .services__wrapper {
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
   }
   .features {
     max-width: 960px;
@@ -405,10 +419,10 @@ svg {
   .features {
     max-width: 1140px;
   }
-  .navbar-container ul {
+  /* .navbar-container ul {
     display: flex;
     margin-left: auto !important  ;
-  }
+  } */
 }
 .navbar-scroll {
   background-color: #fff;
