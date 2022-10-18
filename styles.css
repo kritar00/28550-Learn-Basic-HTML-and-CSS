@@ -276,10 +276,6 @@ svg {
   .container {
     max-width: 400px;
   }
-  .navbar-container {
-    max-width: 400px;
-    flex-wrap: inherit;
-  }
   .features {
     max-width: 400px;
   }
@@ -308,9 +304,6 @@ svg {
   .container {
     max-width: 720px;
   }
-  .navbar-container {
-    max-width: 720px;
-  }
   .features {
     max-width: 720px;
   }
@@ -323,9 +316,6 @@ svg {
 }
 @media all and (min-width: 991px) {
   .container {
-    max-width: 960px;
-  }
-  .navbar-container {
     max-width: 960px;
   }
   .features {
@@ -346,10 +336,6 @@ svg {
   .container {
     max-width: 960px;
   }
-  .navbar-container {
-    max-width: 960px;
-    justify-content: space-between;
-  }
   .services__wrapper {
     width: 50%;
     margin-right: auto;
@@ -364,10 +350,6 @@ svg {
   .navbar {
     background-color: transparent;
     padding: 1.25em 0;
-  }
-  .navbar-container {
-    display: flex;
-    margin-left: auto !important  ;
   }
   .navbar__menu {
     display: block;
@@ -391,22 +373,12 @@ svg {
   .container {
     max-width: 1320px;
   }
-  .navbar-container {
-    max-width: 1320px;
-  }
   .features {
     max-width: 1320px;
-  }
-  .navbar-container ul {
-    display: flex;
-    margin-left: auto !important  ;
   }
 }
 @media all and (min-width: 1200px) {
   .container {
-    max-width: 1140px;
-  }
-  .navbar-container {
     max-width: 1140px;
   }
   .features {
