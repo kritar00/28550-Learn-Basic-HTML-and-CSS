@@ -78,7 +78,6 @@ a {
   z-index: 200;
 }
 .navbar__menu {
-  animation: dropDown 0.5s ease-in-out forwards;
 }
 .navbar__link {
   color: #000;
@@ -272,6 +271,7 @@ svg {
   .navbar {
     background-color: #fff;
     padding: 0.75em 0;
+    transition: all 0.5s ease;
   }
   .container {
     max-width: 400px;
@@ -289,13 +289,9 @@ svg {
   #dropdown:checked + .navbar__menu {
     display: block;
     flex-basis: 100%;
+    animation: dropDown 0.5s ease-in-out forwards;
+    transform-origin: top center;
     align-items: center;
-  }
-  #dropdown:checked + .navbar__list {
-    display: flex;
-    flex-direction: column;
-    animation: dropDown 0.3s ease-in-out forwards;
-    padding: 0;
   }
 
   .navbar__logo {
@@ -317,9 +313,6 @@ svg {
   }
   .features {
     max-width: 720px;
-  }
-  .navbar__menu {
-    display: none;
   }
   .features__wrapper {
     width: 50%;
@@ -378,7 +371,7 @@ svg {
   }
   .navbar__menu {
     display: block;
-    flex-basis: auto !important;
+    flex-basis: auto;
   }
   .navbar__list {
     display: flex;
@@ -419,14 +412,6 @@ svg {
   .features {
     max-width: 1140px;
   }
-  /* .navbar-container ul {
-    display: flex;
-    margin-left: auto !important  ;
-  } */
-}
-.navbar-scroll {
-  background-color: #fff;
-  padding: 10px;
 }
 .active {
   color: #05bd93;
@@ -435,7 +420,7 @@ svg {
   0% {
     transform: scaleY(0);
   }
-  50% {
+  80% {
     transform: scaleY(1.1);
   }
   100% {
